@@ -1,19 +1,24 @@
 <template>
 <div>
 
-  <h1 v-if="inUse">{{ duration }} min left</h1> <h1 v-else>Not in use</h1>
-  <button @click="() => makingSelection =! makingSelection" :disabled="inUse" :class="[inUse ? 'running' : 'empty', 'machine']"></button>
+  <h1 v-if="inUse">{{ duration }} min left</h1> <h1 v-else>open</h1>
+  <button @click="() => makingSelection =! makingSelection" :disabled="inUse" class="machine">
+    <img v-if="inUse" src="../assets/laundry_machine_running.png" alt="">
+    <img v-else src="../assets/laundry_machine_empty.png" alt="">
+  </button>
 
   <section :class="[makingSelection ? 'visible' : 'hidden']">
     
-    <button @click="() => duration--" :disabled="duration < 2"> - </button>
-    <h3>{{duration}}</h3>
-    <button @click="() => duration++"> + </button>
+    <div class="duration-settings">
+      <button @click="() => duration--" :disabled="duration < 2"> - </button>
+      <h3>{{duration}} min</h3>
+      <button @click="() => duration++"> + </button>
+    </div>
     
     <h3>{{cost}}¢</h3>
 
-    <button @click="start"> <h3>okay</h3> </button>
-    <button @click="() => makingSelection = false"> <h3>cancel</h3> </button>
+    <button @click="start"> okay </button>
+    <button @click="() => makingSelection = false"> cancel </button>
   
   </section>
   
@@ -61,28 +66,33 @@ export default {
 
 <style lang="scss" scoped>
 
-$length: 300px;
-
+img {
+  width: 100%;
+}
 button.machine {
-  height: $length;
-  width: $length;
-}
-
-.running {
-  background-image: url('../assets/laundry_machine_running.png');
-  background-size: $length $length;
-}
-
-.empty {
-  background-image: url('../assets/laundry_machine_empty.png');
-  background-size: $length $length;
+  width: 100%;
 }
 
 .visible {
   visibility: visible;
+  @media screen and (max-width: 768px){
+    display: block;
+  }
 }
 
 .hidden {
   visibility: hidden;
+  @media screen and (max-width: 768px){
+    visibility: visible;
+    display: none;
+  }
+}
+
+.duration-settings {
+  display: flex;
+  padding: 16px;
+  h3, button {
+    margin: auto;
+  }
 }
 </style>

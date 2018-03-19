@@ -1,17 +1,22 @@
 <template>
   <div>
-    <h1>Benjamin St.</h1>
-    <router-link to="/laundromat"><button>ENTER LAUNDR-O-MAT</button></router-link>
+    <h1>Laundr-o-Mat</h1> 
+    <router-link to="/laundromat"><button><img src="../assets/storefront.png" alt=""></button></router-link>
+    <p><em>pssst...click the above to enter</em></p>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'StoreFront',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
-    }
-  }
+  name: 'StoreFront'
 }
 </script>
+
+<style lang="scss" scoped>
+img {
+  width: 80%;
+}
+button {
+  width: 80%;
+}
+</style>

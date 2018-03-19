@@ -18,9 +18,26 @@ export default {
 <style>
 @import url('https://fonts.googleapis.com/css?family=Patrick+Hand+SC');
 
-html {
+html, button {
   font-family: 'Patrick Hand SC', cursive;
   font-size: 18px;
+}
+
+button {
+  background-color: transparent;
+  border: 4px solid black;
+  overflow: hidden;
+  outline:none;
+  cursor:pointer;
+}
+
+button:hover {
+    border: 4px solid gold;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  border: none;
 }
 
 #app {
