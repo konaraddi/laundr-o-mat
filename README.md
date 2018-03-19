@@ -2,4 +2,6 @@
 
 ![laundromat screenshot](./screenshot.png)
 
-A laundromat built with Vue.
+http://laundr-o-mat.surge.sh
+
+A subpar laundromat built with Vue. 
