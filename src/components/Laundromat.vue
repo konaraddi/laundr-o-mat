@@ -4,7 +4,7 @@
   <p>click on an open laundry machine</p>
   <router-link to="/"><button>EXIT</button></router-link>
   <section class="laundry-machines">
-    <laundry-machine class="LaundryMachine" v-for="n in 4" :key="n"/>
+    <laundry-machine class="LaundryMachine" v-for="n in 5" :key="n"/>
   </section>
 </div>
 </template>
