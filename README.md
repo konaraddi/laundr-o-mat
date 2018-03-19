@@ -1,1 +1,1 @@
-# a-laundromat
+# laundr-o-mat

@@ -1,10 +1,10 @@
 <template>
 <div>
-  <h1>Laundromat</h1>
+  <h1>Laundr-o-Mat</h1>
+  <router-link to="/"><button>LEAVE</button></router-link>
   <section class="laundry-machines">
     <laundry-machine class="LaundryMachine" v-for="n in 4" :key="n"/>
   </section>
-  <router-link to="/">Leave</router-link>
 </div>
 </template>
 

@@ -3,7 +3,9 @@
     <!--
     <img src="./assets/logo.png">
     -->
-    <router-view/>
+    <keep-alive>
+      <router-view/>
+    </keep-alive>
   </div>
 </template>
 
@@ -14,6 +16,13 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css?family=Patrick+Hand+SC');
+
+html {
+  font-family: 'Patrick Hand SC', cursive;
+  font-size: 18px;
+}
+
 #app {
   text-align: center;
 }

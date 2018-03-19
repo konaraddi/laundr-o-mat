@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h1>StoreFront</h1>
-    <router-link to="/laundromat">Enter</router-link>
+    <h1>Benjamin St.</h1>
+    <router-link to="/laundromat"><button>ENTER LAUNDR-O-MAT</button></router-link>
   </div>
 </template>
 
