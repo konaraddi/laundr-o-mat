@@ -34,7 +34,6 @@ export default {
   }
 
   @media screen and (max-width: 768px){
-    width: 100%;
     padding: 8px; 
     .LaundryMachine {
       padding: 8px;
