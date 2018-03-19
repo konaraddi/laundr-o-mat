@@ -7,7 +7,7 @@
     <h3>"Why is it called Laundr-o-mat?"</h3>
     <p>Honestly, I didn't put much thought into the name of it</p>
     <h3>"Why did you make this?"</h3>
-    <p>Because it was <a href="https://tinyletter.com/cassidoo" target="_blank">this</a> weekly newsletter's interview question of the week</p>
+    <p>It was <a href="https://tinyletter.com/cassidoo" target="_blank">this</a> weekly newsletter's interview question of the week</p>
     <h3>"Where's the source code?"</h3>
     <a href="//github.com/konaraddio/laundr-o-mat" target="_blank">On Github</a>
   </div>
